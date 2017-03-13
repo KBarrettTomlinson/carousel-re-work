@@ -1,0 +1,193 @@
+*{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+}
+
+header{
+  background-color: ivory;
+  height: 15%;
+}
+
+h1{
+  font-size: 64px;
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding:15px;
+  color: teal;
+}
+
+button{
+  display: inline-block;
+  border: none;
+  padding: 15px 32px;
+  font-size: 20px;
+  font-family: helvetica;
+  margin: 0 auto;
+  background-color: rosybrown;
+  opacity: .75;
+  color: teal;
+  text-transform: uppercase;
+  height:100%;
+  width: 100%;
+}
+
+button:hover{
+  opacity: 1;
+}
+
+button:focus{
+  outline: none;
+}
+
+#wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.nav-main-container{
+  background-color: whitesmoke;
+  height: 8%;
+  text-align: center;
+  display: block;
+  width: 100%
+}
+
+#navColor{
+  background-color: antiquewhite;
+}
+
+.nav-container{
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  width: 20%;
+}
+
+#outOfContainer{
+  background-color: transparent;
+}
+
+#numOutOfTotal{
+  font-size: 18px;
+  font-family: helvetica;
+  color: teal;
+  height: 50%;
+  padding-top: 15px;
+  text-transform: uppercase;
+  display:none;
+}
+
+#carouselContainer{
+  background-color: linen;
+  height: 59%;
+  display: block;
+
+}
+
+.banner{
+  height: 95%;
+  margin: 0 auto;
+  width:90%;
+  position: relative;
+  top: 2%;
+  background-color: floralwhite;
+  text-align: center;
+}
+
+#chiYakBanner{
+
+}
+
+#bannerText{
+  text-align: center;
+  font-size: 144px;
+  font-family: sans-serif;
+  height: 50%;
+  color: purple;
+  padding-top: 75px;
+}
+
+#personDisplayBanner{
+  display: none;
+}
+
+.person-containers{
+  display:inline-block;
+  height: 100%;
+  width: 48%;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+#picture{
+
+}
+
+#nameAndShoutout{
+  
+}
+
+.name-shoutout-containers{
+  height:50%;
+  width:100%;
+  float: left;
+}
+
+#nameDisplay{
+  background-color: snow;
+}
+
+#shoutoutDisplay{
+  background-color: ghostwhite;
+}
+
+.name-shoutout-text{
+  color:purple;
+  font-family: helvetica;
+  height:50%;
+}
+
+.name{
+  font-size: 48px;
+  padding-top: 50px;
+}
+
+.shoutout{
+  font-size: 18px;
+  padding: 20px;
+}
+
+#prev{
+
+}
+
+#next{
+
+}
+
+#locationDisplay{
+  background-color: gainsboro;
+  height: 10%;
+  text-align: center;
+}
+
+#firstSquare{
+
+}
+
+.littleSquares{
+  height:25px;
+  width: 25px;
+  margin:10px;
+  background-color: cornsilk;
+  display: inline-block;
+}
+
+.highlight{
+  background-color: purple;
+}

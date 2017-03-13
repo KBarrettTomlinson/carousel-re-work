@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chi Day 5</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="images.css" /> -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- HEADER -->
+      <header>
+        <h1>Prime Academy</h1>
+      </header>
+      <!-- END HEADER  -->
+
+      <!-- "OUT OF" CONTAINER. Nav bar which displays which person x out y
+      is currently being displayed. -->
+      <div id="navColor" class="nav-main-container">
+        <div id="outOfContainer" class="nav-container">
+          <p id="numOutOfTotal">Chi-Yak x of y</p>
+        </div>
+      </div>
+      <!-- END "OUT OF" CONTAINER -->
+
+
+      <!-- CAROUSEL CONTAINER -->
+      <div id="carouselContainer">
+
+        <!-- CHI YAK BANNER banner which displays on initial loading -->
+        <div id="chiYakBanner" class="banner">
+          <p id="bannerText">Chi-Yaks</p>
+        </div>
+        <!--END CHI YAK BANNER -->
+
+      </div>
+      <!-- END CAROUSEL CONTAINER  -->
+
+      <!--  BUTTON CONTAINER the main nav container for prev and next buttons-->
+      <div class="nav-main-container">
+
+        <!--  BUTTON-->
+        <div id="prev" class="nav-container">
+          <button>prev</button>
+        </div>
+        <!--  END BUTTON-->
+
+        <!-- BUTTON-->
+        <div id="next" class="nav-container">
+          <button>next</button>
+        </div>
+        <!--  END BUTTON-->
+
+      </div>
+      <!--  END BUTTON CONTAINER-->
+
+      <!--  LOCATION DISPLAY CONTAINER container where squares are used to
+      track progress through the carousel-->
+      <div id="locationDisplay">
+        <div id="firstSquare" class="highlight littleSquares"></div>
+      </div>
+      <!-- END LOCATION DISPLAY CONTAINER-->
+
+    </div>
+  </body>
+</html>
