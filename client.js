@@ -63,9 +63,49 @@ function addEventListeners(){
     int = setInterval(advanceForward,10000);
   });
 
+  $('#locationDisplay').on("click",".littleSquares",function(){
+    console.log("you clicked one of the little squares");
+    console.log("you clicked on box number",$(this).data('order'));
+    var clickedSquare = $(this).data('order');
+    clearInterval(int);
+    jumpTo(clickedSquare);
+    int = setInterval(advanceForward,10000);
+
+  });
+}
+
+function jumpTo(clickedSquare){
+  index = clickedSquare;
+  $("#carouselContainer").fadeOut('slow',function(){
+      $("#chiYakBanner").hide();
+      $("#firstSquare").removeClass("highlight");
+      $("#numOutOfTotal").show();
+
+    for(var i = 0; i < arrayLittleSquares.length; i++){
+      $(arrayLittleSquares[i]).removeClass("highlight");
+      $(arrayPersonBanners[i]).hide();
+      if(arrayLittleSquares[i].data("order") === index){
+        arrayLittleSquares[i].addClass("highlight");
+        arrayPersonBanners[i].show();
+        var total = peopleArray.length;
+        console.log(index);
+        console.log(total);
+        $("#numOutOfTotal").text("Chi-Yak "+index+" of "+total);
+      }
+    }
+
+    if (index === 0){
+      $("#chiYakBanner").show();
+      $("#firstSquare").addClass("highlight");
+      $("#numOutOfTotal").hide();
+    }
+
+    $("#carouselContainer").fadeIn("slow");
+  });
 }
 
 function advanceForward(){
+  $("#carouselContainer").fadeOut('slow',function(){
   if(index === 0){
     $("#chiYakBanner").hide();
     $("#firstSquare").removeClass("highlight");
@@ -93,10 +133,14 @@ function advanceForward(){
     $("#firstSquare").addClass("highlight");
     $("#numOutOfTotal").hide();
   }
+
+  $("#carouselContainer").fadeIn("slow");
+});
 }
 
 
 function advanceBackward(){
+  $("#carouselContainer").fadeOut("slow",function(){
   console.log("advanceBackward");
   console.log("beginning", index);
   if (index === 1){
@@ -125,6 +169,9 @@ function advanceBackward(){
       $("#numOutOfTotal").text("Chi-Yak "+index+" of "+total);
     }
   }
+
+  $("#carouselContainer").fadeIn('slow');
+});
 }
 
 function showNextBanner(){
