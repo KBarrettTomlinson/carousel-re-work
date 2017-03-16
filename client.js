@@ -9,6 +9,8 @@ var arrayLittleSquares = [];
 // interval variable
 var int;
 
+
+
 $(document).ready(function(){
   console.log("I'm Here For You");
 //Builds array of people objects from data.js and images.css
@@ -192,6 +194,7 @@ function appendPersonContainers(array){
 
     $("#carouselContainer").append("<div id='personDisplayBanner'"+
       " class='banner'></div>");
+
     var $el1 = $("#carouselContainer").children().last();
     $el1.data("idNum",i+1);
     $el1.hide();
